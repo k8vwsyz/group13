@@ -1,0 +1,42 @@
+.container {
+  width: 100%;
+  height: 100%;
+}
+
+/* .gridContainer {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr 1fr 1fr;
+  gap: 0px 0px;
+  grid-template-areas:
+    ". ."
+    ". ."
+    ". .";
+  width: 100%;
+  height: 100%;
+}
+
+.addCar {
+  grid-column: 1 / 2;
+  grid-row: 3 / 4;
+}
+
+.moveCar {
+  grid-column: 2 / 3;
+  grid-row: 3 / 4;
+}
+
+.carSelector {
+  grid-column: 1 / 2;
+  grid-row: 1 / 2;
+}
+
+.laneSelector {
+  grid-column: 2 / 3;
+  grid-row: 1 / 2;
+}
+
+.heightSlider {
+  grid-column: 1 / 3;
+  grid-row: 2 / 3;
+} */

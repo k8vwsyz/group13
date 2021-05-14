@@ -1,0 +1,106 @@
+.container {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.fixedRatio {
+  width: 100%;
+  position: relative;
+  background-color: rgb(89, 84, 84);
+  overflow: hidden;
+  display: flex;
+  padding-bottom: 385%;
+}
+
+.overflowContainer {
+  width: 100%;
+  height: calc(100% * (9/7));
+  position: absolute;
+  top: calc(-100% * (2/7));
+  display: flex;
+  flex-direction: column;
+  animation-name: laneAnimation;
+  animation-duration: 800ms;
+  animation-iteration-count: infinite;
+  animation-timing-function: linear;
+}
+
+@keyframes laneAnimation {
+  100% {top: 0 }
+}
+
+.lane {
+  flex-grow: 1;
+  background-color: transparent;
+}
+
+.laneDivider {
+  background-color: transparent;
+  width: 3%;
+  position: relative;
+}
+
+.whiteMarker {
+  flex-grow: 1;
+  background-color: #fff;
+}
+
+.blankMarker {
+  flex-grow: 1;
+  background-color: transparent;
+}
+
+.fill {
+  width: 100%;
+  height: 100%;
+}
+
+.displayFlex {
+  display: flex;
+}
+
+.positionAbsolute {
+  position: absolute;
+}
+
+.move {
+  animation-name: shiftUp;
+  animation-duration: 1200ms;
+  animation-timing-function: linear;
+  animation-iteration-count: infinite;
+}
+@keyframes shiftUp {
+  0% {
+    opacity: 0;
+  }
+  15% {
+    opacity: 0;
+    transform: translateY(0)
+  }
+  50% {
+    opacity: 1;
+  }
+  85% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+    transform: translateY(calc(-100% + 45px))
+  }
+}
+
+.pulse {
+  animation-name: opacityPulse;
+  animation-duration: 1200ms;
+  animation-timing-function: ease-in-out;
+  animation-iteration-count: infinite;
+}
+@keyframes opacityPulse {
+  0% { opacity: 0; }
+  30% { opacity: 1; }
+  70% { opacity: 1; }
+  100% { opacity: 0; }
+}

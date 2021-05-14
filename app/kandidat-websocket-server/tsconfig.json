@@ -1,0 +1,16 @@
+{
+    "compilerOptions": {
+        "removeComments": true,
+        "module": "commonjs",
+        "esModuleInterop": true,
+        "target": "es6",
+        "strict": true
+    },
+    "include": [
+        "src/**/*"
+    ],
+    "exclude": [
+        "node_modules",
+        "**/*.spec.ts"
+    ]
+}
